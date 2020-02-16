@@ -1,0 +1,9 @@
+{%extends "testapp/base.html"%}
+{%block content_block%}
+<form>
+    <h2>USER REGISTER</h2>
+    {{form.as_p}}
+    {%csrf_token%}
+    <input type="submit" class='btn btn-lg btn-primary' value="register">
+</form>
+{%endblock%}
